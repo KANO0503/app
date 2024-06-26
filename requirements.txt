@@ -3,3 +3,7 @@ pandas
 seaborn
 scikit-learn
 python-dotenv
+folium
+streamlit_folium
+openai
+google.generativeai
