@@ -12,9 +12,9 @@ import random
 # 로깅 설정
 logging.basicConfig(level=logging.INFO)
 
-# API 키 가져오기
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-GEMINI_API_KEY = os.getenv("GOOGLE_API_KEY")
+# Streamlit secrets에서 OpenAI API 키 가져오기
+OPENAI_API_KEY = st.secrets["OPENAI"]["api_key"]
+GEMINI_API_KEY = st.secrets["GOOGLE"]["api_key"]
 
 # OpenAI 클라이언트 설정
 openai_client = OpenAI(api_key=OPENAI_API_KEY)
