@@ -1,6 +1,7 @@
 import streamlit as st
 import folium
 from streamlit_folium import folium_static
+import os
 from openai import OpenAI
 import google.generativeai as genai
 import json
