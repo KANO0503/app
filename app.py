@@ -8,7 +8,7 @@ import re
 import logging
 import random
 import os
-from dotenv import load_dotenv
+
 
 
 # 로깅 설정
