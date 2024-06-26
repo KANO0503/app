@@ -7,13 +7,17 @@ import json
 import re
 import logging
 import random
+from dotenv import load_dotenv
+ 
+# 환경 변수 로드
+load_dotenv()
 
 # 로깅 설정
 logging.basicConfig(level=logging.INFO)
 
 # API 키 설정 (실제 키로 교체 필요)
-OPENAI_API_KEY = "sk-proj-UQ2rl94n54GsNYPTNO8DT3BlbkFJFPoxqjvQ66R4EqZeiNlt"
-GEMINI_API_KEY = "AIzaSyBYBIHvllOkdFzTD_AwGsAtIZ1QUBJ5afk"
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+GEMINI_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 # OpenAI 클라이언트 설정
 openai_client = OpenAI(api_key=OPENAI_API_KEY)
