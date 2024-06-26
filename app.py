@@ -11,8 +11,9 @@ import random
 # 로깅 설정
 logging.basicConfig(level=logging.INFO)
 
-OPENAI_API_KEY = ""
-GEMINI_API_KEY = ""
+# API 키 가져오기
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+GEMINI_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 # OpenAI 클라이언트 설정
 openai_client = OpenAI(api_key=OPENAI_API_KEY)
