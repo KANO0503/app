@@ -13,7 +13,7 @@ import random
 logging.basicConfig(level=logging.INFO)
 
 # Streamlit secrets에서 OpenAI API 키 가져오기
-OPENAI_API_KEY = st.secrets["OPENAI"]["api_key"]
+
 GEMINI_API_KEY = st.secrets["GOOGLE"]["api_key"]
 
 # OpenAI 클라이언트 설정
