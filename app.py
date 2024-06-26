@@ -7,14 +7,11 @@ import json
 import re
 import logging
 import random
-import os
-
-
 
 # 로깅 설정
 logging.basicConfig(level=logging.INFO)
 
-# API 키 설정 
+# API 키 설정 (실제 키로 교체 필요)
 OPENAI_API_KEY = "sk-proj-UQ2rl94n54GsNYPTNO8DT3BlbkFJFPoxqjvQ66R4EqZeiNlt"
 GEMINI_API_KEY = "AIzaSyBYBIHvllOkdFzTD_AwGsAtIZ1QUBJ5afk"
 
